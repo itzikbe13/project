@@ -1,0 +1,8 @@
+.flex { 
+	display: flex;
+	float:right;
+	text-align:center;
+	}
+.flex1 {
+	flex:1;
+	}
