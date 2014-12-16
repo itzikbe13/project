@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<script src="targil.js"></script>
+	<link href="targil.css"  rel="stylesheet" type="text/css"/>
+	
+</head> 
+<body> 
+
+<div data-role="page" id="home">
+	
+	<div data-role="header">		
+		<h1>auto rental service</h1>
+		<h2 class="entry">welcome</h2>
+	</div><!-- /header -->
+	
+	<div data-role="content">	
+		<p>welcome to auto rental service. hrer you can rental a car for each of your needs. al costs
+			and need to know is in here. feel free to explore all the possibilities. </p>
+		
+		<p>Select page:</p>
+		<ul class="list ui-block-a flex" data-role="listview" data-filter="true">
+			
+			<li>
+				<a data-transition="slide" href="#contact">choose a car for rental</a>
+			</li>
+			<li>
+				<a data-transition="slide" href="#blog">summarize the costs</a>
+			</li>
+			<li>
+				<a data-transition="slide" href="#return">return a vehicle</a>
+			</li>
+		</ul>
+		<br /> <br /> <br /> <br />
+		<ul class="flex1" data-role="listview">
+			<li>
+				<a data-transition="slide" href="#contact">order now</a>
+			</li>
+			<li>
+				<a data-transition="slide" href="#blog">login</a>
+			</li>
+			<li>
+				<a data-transition="slide" href="#about">sign up</a>
+			</li>
+		</ul>
+		<br /> <br /> <br /> <br /> <br /> <br /> <br />
+		<p style="text-align:center">all rights reserved to auto rental car service inc@</p><span style="text-align:center" id="date">date</span>
+	</div>
+
+</div>
+
+<div data-role="page" id="about">
+
+	<div data-role="header">
+		<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left">Back</a>
+		<h1>sign up</h1>
+	</div>
+
+	<div data-role="content">
+		<input class="user" id="user" type="text" placeholder="Name"/>
+		<input class="id" id="id" type="text" placeholder="ID"/>
+		<input class="email" id="email" type="email" placeholder="Email"/>
+		<input class="phone" id="phone" type="tel" placeholder="Phone"/>
+		<input class="pele" id="pele" type="tel" placeholder="Pelephone"/>
+		<input class="birth" id="birth" type="date" placeholder="birth"/>
+		<input class="license" id="license" type="number" placeholder="license no."/>
+		<button id="sign" name="sign">sign up</button>
+	
+	</div>
+	
+</div>
+<div data-role="page" id="contact">
+
+	<div data-role="header">
+		<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left">Back</a>
+		<h1>choose a car for rental</h1>
+	</div>
+
+	<div data-role="content">	
+		<div>
+			mazda
+		</div>
+		<img src="images (1).jpg" />
+		<img src="images (2).jpg" />
+		<div>
+			ferrari
+		</div>
+		<img src="images.jpg" />
+		<img src="הורד.jpg" />
+		<div>
+			toyota
+		</div>
+		<img src="images (3).jpg" />
+	</div>
+
+</div>
+<div data-role="page" id="blog">
+
+	<div data-role="header">
+		<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left">Back</a>
+		<h1>login</h1>
+	</div>
+
+	<div data-role="content">	
+		<input class="login" type="text" placeholder="user name" id="user" />
+		<button id="login">login</button>
+	</div>
+</div>
+<div data-role="page" id="return">
+
+		<div data-role="header">
+			<a href="#home" data-transition="slide" data-direction="reverse" class="ui-btn-left">Back</a>
+			<h1>return a car</h1>
+		</div>
+
+		<div data-role="content">	
+			Please don't contact me...
+		</div>
+
+</div>
+</div>
+
+</body>
+</html>
